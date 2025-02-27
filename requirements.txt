@@ -1,0 +1,17 @@
+requests==2.31.0
+requests-toolbelt==0.10.1
+geopy==2.4.0
+prettytable==3.8.0
+pyreadline3==3.4.1; platform_system == "Windows"
+
+# Fix for readline on Linux/Termux
+readline==8.2; platform_system != "Windows"
+
+# Explicitly adding dependencies to avoid version conflicts
+certifi>=2023.7.22
+chardet>=5.2.0
+idna>=3.4
+urllib3>=2.0.0
+
+# Ensuring random-user-agent compatibility
+random-user-agent==1.0.1
